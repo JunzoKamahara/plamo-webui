@@ -10,7 +10,7 @@ def inference(data):
     return output[0]['generated_text']
 demo = gr.Interface(
     fn=inference,
-    inputs=gr.Textbox(lines=3, placeholder="プロンプト"),
+    inputs=gr.Textbox(lines=3, placeholder="prompt"),
         outputs=["text"],
         allow_flagging='never'
     )
